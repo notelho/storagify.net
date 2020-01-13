@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { OnScrollService } from './services/on-scroll.service';
+import { debounce } from 'rxjs/operators';
+import { timer, interval } from 'rxjs';
 
 @Component({
   selector: 'stfy-root',
@@ -6,5 +9,31 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+
   title = 'storagify';
+
+
+  constructor(public onScrollService: OnScrollService) {
+
+    this.onScrollService.onScroll()
+      .pipe(debounce(() => interval(70)))
+      .subscribe(() => this.moveBackground())
+
+  }
+
+
+  moveBackground() {
+
+    let scrollamount = (window.pageYOffset !== undefined) ?
+
+      window.pageYOffset : (document.documentElement || document.body).scrollTop;
+
+    console.log(scrollamount);
+
+
+    // this.scrollClass = this.ref.scrollTop == 0 ? 'top' : ''
+
+
+  }
+
 }

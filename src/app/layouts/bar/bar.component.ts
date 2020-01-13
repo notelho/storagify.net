@@ -1,7 +1,7 @@
 import { Component, OnInit, ElementRef } from '@angular/core';
 import { OnScrollService } from 'src/app/services/on-scroll.service';
 import { debounce } from 'rxjs/operators';
-import { interval } from 'rxjs';
+import { interval, timer } from 'rxjs';
 
 @Component({
   selector: 'stfy-bar',
@@ -23,7 +23,7 @@ export class BarComponent implements OnInit {
     this.ref = (doc.clientHeight) ? doc : body
 
     this.onScrollService.onScroll()
-      .pipe(debounce(() => interval(20)))
+      .pipe(debounce(() => interval(30)))
       .subscribe(() => this.scrollClass = this.ref.scrollTop == 0 ? 'top' : '')
 
   }
