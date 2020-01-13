@@ -1,0 +1,56 @@
+@import 'src/assets/styles/variables.scss';
+
+.app{
+    z-index: -1;
+
+    & > * {
+        z-index: -1;
+        transition: ease all 600ms;
+    }
+
+    .circle{
+
+    }
+
+    .rect{    
+        position: fixed;
+        top: 0;
+        left: -5vw;
+        width: 120vw;
+        height: 100vh;
+        background-color: #796891;
+        border-radius: 400px;
+        transform: rotate(5deg);
+        background-image: linear-gradient(85deg, $medium 0%, $light 100%);
+
+        &::before{
+            content: '';
+            width: 120vw;
+            height: 50vh;
+            background: linear-gradient(85deg, $medium 0%, $light 100%);
+            top: -5vh;
+            left: -5vw;
+            position: absolute;
+            transform: rotate(-5deg);
+        }
+
+    }
+
+}
+
+@media (max-width: 1200px){
+    .app{
+
+        .rect{
+            height: 95vh;
+            background-color: #796891;
+            border-radius: 0;
+            transform: rotate(0);
+            background-image: linear-gradient(90deg, $medium 0%, $light 100%);
+
+            &::before{
+                display: none;
+            }
+        }
+    }
+}
