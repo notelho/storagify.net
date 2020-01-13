@@ -1,10 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,600,800&display=swap');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap';
+@import './assets/styles/variables.scss';
 
 html, body{
     margin: 0;
     padding: 0;
-    background-color: #fafafa;
+    background-color: #fafafa; 
+
+    &::-webkit-scrollbar {
+        width: 7px;
+        height: 7px;
+    }
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px #eeeeee; 
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: rgba($darken, 0.3); 
+        border-radius: 6px;
+    }
+    &::-webkit-scrollbar-thumb:hover {
+        background: rgba($dark, 0.3); 
+    }
 }
 
 *{

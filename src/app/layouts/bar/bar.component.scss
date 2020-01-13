@@ -1,5 +1,9 @@
 @import 'src/assets/styles/variables.scss';
 
+.navbar, .wrapper{
+    transition: 600ms;
+}
+
 .navbar {
     background-color: $darken;
     color: white;
@@ -11,6 +15,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 10;
+
+    &.top{
+        height: 95px;
+        background-color: transparent;
+    }
 
     .navbar__logo {
         padding-left: 25px;
@@ -19,7 +29,7 @@
             display: flex;
             align-items: center;
             height: 100%;
-            svg {
+            img {
                 width: calc(995px /7.5);
                 height: calc(262px /7.5);
             }
@@ -44,12 +54,16 @@
                 font-size: 14px;
                 text-decoration: none !important;
                 color: white;
-                font-weight: 800;
+                font-weight: 700;
             }
         }
     }
 }
 
-.nav__wrapper {
-    height: 65px;
+.wrapper {
+    padding-top: 65px;
+
+    &.top{
+        padding-top: 85px;
+    }
 }
