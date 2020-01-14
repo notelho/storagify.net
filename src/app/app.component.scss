@@ -18,16 +18,15 @@
         left: -5vw;
         width: 120vw;
         height: 100vh;
-        background-color: #796891;
+        background-color: $dark;
         border-radius: 400px;
         transform: rotate(5deg);
-        background-image: linear-gradient(85deg, $dark 0%, $darken 100%);
 
         &::before{
             content: '';
             width: 120vw;
             height: 50vh;
-            background: linear-gradient(85deg, $dark 0%, $darken 100%);
+            background-color: $dark;
             top: -5vh;
             left: -5vw;
             position: absolute;
