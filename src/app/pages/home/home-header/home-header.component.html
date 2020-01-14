@@ -1,1 +1,39 @@
-<p>home-header works!</p>
+<div class="header">
+    <div class="header__main">
+
+        <h1 class="header__title">
+            Storagify, the storage superset
+        </h1>
+
+        <p class="header__subtitle">
+            Open-source front-end library that builds a superset based on all browser <br>
+            Storages implementations (localStorage & sessionStorage).
+        </p>
+
+        <ul class="header__options">
+            <li class="option__item">
+                <a href="#" class="header__button">
+                    Install it now
+                </a>
+            </li>
+            <li class="option__item">
+                <a href="#" class="header__button header__button--dark">
+                    See docs
+                </a>
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="header__terminal">
+        <div class="terminal__layers">
+
+            <ng-template ngFor let-img [ngForOf]="[1,2,3]">
+                <img src="../../../assets/svg/bash-header.svg" class="img-{{img}}"
+                    alt="Linux terminal with commands: npm install storagify and yarn install storagify">
+            </ng-template>
+
+        </div>
+    </div>
+
+</div>
