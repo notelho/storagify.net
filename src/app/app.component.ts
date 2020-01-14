@@ -17,7 +17,7 @@ export class AppComponent {
   constructor(public onScrollService: OnScrollService) {
 
     this.onScrollService.onScroll()
-      .pipe(debounce(() => interval(70)))
+      // .pipe(debounce(() => interval(70)))
       .subscribe(() => this.moveBackground())
 
   }
