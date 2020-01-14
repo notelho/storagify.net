@@ -10,8 +10,9 @@ import { timer, interval } from 'rxjs';
 })
 export class AppComponent {
 
-  title = 'storagify';
+  title = 'storagify'
 
+  squareTop = 0
 
   constructor(public onScrollService: OnScrollService) {
 
@@ -21,7 +22,6 @@ export class AppComponent {
 
   }
 
-
   moveBackground() {
 
     let scrollamount = (window.pageYOffset !== undefined) ?
@@ -30,6 +30,7 @@ export class AppComponent {
 
     console.log(scrollamount);
 
+    this.squareTop= scrollamount
 
     // this.scrollClass = this.ref.scrollTop == 0 ? 'top' : ''
 

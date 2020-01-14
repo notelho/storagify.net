@@ -1,4 +1,40 @@
-div {
-    // background-color: rgba(255,0,0, 0.5);
-    height: 350vh;
+.container{
+
+    .container__1{
+        height: calc(100vh - 85px);
+        
+
+        .grid{
+            height: 100%;
+            width: 100%;
+            background-color: rgba(red, 0.5);
+            position: relative;
+            display: flex;
+
+            .title{
+                
+            }
+
+            .subtitle{
+                
+            }
+
+        }
+
+    }
+
+    .container__2{
+        height: 100vh;
+        background-color: rgba(blue, 0.5);
+    }
+
+    .container__3{
+        height: 400px;
+        background-color: rgba(lime, 0.5);
+    }
+
+    .container__4{
+        height: 100vh;
+        background-color: rgba(pink, 0.5);
+    }
 }
