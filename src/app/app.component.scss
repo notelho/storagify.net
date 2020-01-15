@@ -7,8 +7,35 @@
         transition: ease all 300ms;
     }
 
-    .circle{
+    .flower{
+        position: fixed;
         z-index: -2;
+        border-radius: 50%;
+        left: 20vw;
+        background-color: $light;
+    }
+
+    .cloud{
+        z-index: -2;
+        position: fixed;
+        width: calc(631px / 3);
+        height: calc(350px / 3);
+
+        path {
+            fill: rgba($light, 0.2);
+        }
+
+        &.cloud-1{
+            bottom: 60vh;
+        }
+
+        &.cloud-2{
+            bottom: 70vh;
+        }
+
+        &.cloud-3{
+            bottom: 50vh;
+        }
     }
 
     .rect{    
