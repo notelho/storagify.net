@@ -9,6 +9,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { DocsComponent } from './pages/docs/docs.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HomeHeaderComponent } from './pages/home/home-header/home-header.component';
+import { HomeQualityComponent } from './pages/home/home-quality/home-quality.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { HomeHeaderComponent } from './pages/home/home-header/home-header.compon
     HomeComponent,
     DocsComponent,
     NotfoundComponent,
-    HomeHeaderComponent
+    HomeHeaderComponent,
+    HomeQualityComponent
   ],
   imports: [
     BrowserModule,

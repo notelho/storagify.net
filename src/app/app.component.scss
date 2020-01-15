@@ -11,8 +11,7 @@
         position: fixed;
         z-index: -2;
         border-radius: 50%;
-        left: 20vw;
-        background-color: $light;
+        background-color: rgba($lighten, 0.7);
     }
 
     .cloud{
