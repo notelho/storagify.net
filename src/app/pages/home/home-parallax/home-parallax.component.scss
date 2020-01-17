@@ -12,6 +12,7 @@
     align-items: center;
     position: relative;
     perspective: 760px;
+    height: 350px;
 
     .key{
         width: calc(778px * .6);
@@ -21,7 +22,6 @@
         @at-root{
             @keyframes rotateX {
                 from { transform: rotateX(0) }   
-                50% { transform: rotateX(-180deg) }
                 100% { transform: rotateX(-360deg) }   
             }
         }
