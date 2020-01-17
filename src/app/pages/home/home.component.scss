@@ -6,7 +6,9 @@
         height: calc(100vh - 85px);
     }
 
-    // .section__quality{ }
+    .section__quality{ 
+        background-color: rgba(#fafafa, 0.2);
+    }
 
     .section__3{
         height: 60vh;
@@ -14,12 +16,11 @@
     }
 
     .section__tools{
-        height: 60vh;
-        background-color: rgba(pink, 0.2);
+        height: 300px;
     }
 
     .section__parallax{
-        height: 300px;
+        height: 350px;
     }
 
     .section__6{

@@ -11,6 +11,7 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HomeHeaderComponent } from './pages/home/home-header/home-header.component';
 import { HomeQualityComponent } from './pages/home/home-quality/home-quality.component';
 import { HomeParallaxComponent } from './pages/home/home-parallax/home-parallax.component';
+import { HomeToolsComponent } from './pages/home/home-tools/home-tools.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { HomeParallaxComponent } from './pages/home/home-parallax/home-parallax.
     NotfoundComponent,
     HomeHeaderComponent,
     HomeQualityComponent,
-    HomeParallaxComponent
+    HomeParallaxComponent,
+    HomeToolsComponent
   ],
   imports: [
     BrowserModule,
