@@ -2,25 +2,24 @@
 
 .container{
 
-    .section__1{
+    .section__header{
         height: calc(100vh - 85px);
     }
 
-    .section__2{  }
+    // .section__quality{ }
 
     .section__3{
         height: 60vh;
         background-color: rgba(lime, 0.2);
     }
 
-    .section__4{
+    .section__tools{
         height: 60vh;
         background-color: rgba(pink, 0.2);
     }
 
-    .section__5{
-        height: 400px;
-        background-color: rgba(red, 0.2);
+    .section__parallax{
+        height: 300px;
     }
 
     .section__6{

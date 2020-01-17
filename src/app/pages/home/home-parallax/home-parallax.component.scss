@@ -1,0 +1,122 @@
+.parallax{
+    width: 100%;
+    height: 100%;
+    background-color: #804B9F;
+    background-image: url('../../../../assets/img/landscape.jpg');
+    background-size: calc(1099px * 0.15) calc(873px * 0.15);
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    perspective: 760px;
+
+    .key{
+        width: calc(778px * .6);
+        height: calc(223px * .6);
+        animation: rotateX 1s linear infinite;
+        z-index: 2;
+        @at-root{
+            @keyframes rotateX {
+                from { transform: rotateX(0) }   
+                50% { transform: rotateX(-180deg) }
+                100% { transform: rotateX(-360deg) }   
+            }
+        }
+    }
+
+    .shiny{
+        position: absolute;
+        width: calc(112px * .6);
+        height: calc(112px * .6);
+        opacity: 0;
+        top: var(--top-1);
+        left:  var(--left-1);
+        transform: scale(.1);
+        animation: shinybright 1s ease var(--delay) infinite forwards;
+        @at-root{
+            @keyframes shinybright {
+                from, #{33% * 0.7}, 32%{
+                    top: var(--top-1);
+                    left: var(--left-1);
+                }
+                from{
+                    opacity: 0;
+                    transform: scale(.1);
+                }
+                #{33% * 0.7}{
+                    opacity: 1;
+                    transform: scale(0.6);
+                }
+                32%{
+                    opacity: 1;
+                    transform: scale(0.45);
+                }
+                33%, #{66% * 0.7}, 65%{
+                    top: var(--top-2);
+                    left: var(--left-2);
+                }
+                33%{
+                    opacity: 0;
+                    transform: scale(.1);
+                }
+                #{66% * 0.7}{
+                    opacity: 1;
+                    transform: scale(0.6);
+                }
+                65%{
+                    opacity: 1;
+                    transform: scale(0.45);
+                }
+                66%, #{100% * 0.7}, 100%{
+                    top: var(--top-3);
+                    left: var(--left-3);
+                }
+                66%{
+                    opacity: 0;
+                    transform: scale(.1);
+                }
+                #{100% * 0.7}{
+                    opacity: 1;
+                    transform: scale(0.6);
+                }
+                100%{
+                    opacity: 1;
+                    transform: scale(0.45);
+                }
+            }
+        }
+
+        &.shiny-1{
+            --delay: 0ms;
+            --top-1: 20px;
+            --left-1: 20%;
+            --top-2: 15px;
+            --left-2: 25%;
+            --top-3: 150px;
+            --left-3: 30%;
+        }
+
+        &.shiny-2{
+            --delay: 200ms;
+            --top-1: 250px;
+            --left-1: 50%;
+            --top-2: 70%;
+            --left-2: 70%;
+            --top-3: 150px;
+            --left-3: 60%;
+        }
+
+        &.shiny-3{
+            --delay: 400ms;
+            --top-1: 20%;
+            --left-1: 70%;
+
+            --top-2: 30px;
+            --left-2: 60%;
+            --top-3: 40px;
+            --left-3: 47%;
+           
+        }
+    }
+}

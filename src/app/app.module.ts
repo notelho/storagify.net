@@ -10,6 +10,7 @@ import { DocsComponent } from './pages/docs/docs.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
 import { HomeHeaderComponent } from './pages/home/home-header/home-header.component';
 import { HomeQualityComponent } from './pages/home/home-quality/home-quality.component';
+import { HomeParallaxComponent } from './pages/home/home-parallax/home-parallax.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { HomeQualityComponent } from './pages/home/home-quality/home-quality.com
     DocsComponent,
     NotfoundComponent,
     HomeHeaderComponent,
-    HomeQualityComponent
+    HomeQualityComponent,
+    HomeParallaxComponent
   ],
   imports: [
     BrowserModule,
