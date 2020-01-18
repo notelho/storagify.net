@@ -15,7 +15,7 @@
     height: 100%;
     user-select: none;
 
-    .background{
+    .magic__background{
         background-color: transparent;
         background-image: url('../../../../../assets/img/background.png');
         position: absolute;
@@ -24,9 +24,9 @@
         z-index: -1;
     }
 
-    .images{
+    .magic__images{
 
-        .wand, .hat{
+        .images__wand, .images__hat{
             position: absolute;
             img{
                 position: absolute;
@@ -34,7 +34,7 @@
             }
         }
 
-        .wand{
+        .images__wand{
             width: 100px;
             top: 15%;
             right: 20%;
@@ -64,7 +64,7 @@
             }
         }
 
-        .hat{
+        .images__hat{
             width: 140px;
             top: 55%;
             right: 10%;
@@ -79,12 +79,12 @@
     }
 }
 
-.text{
+.magic__text{
     position: absolute;
     top: 22%;
     left: 50px;
 
-    .glitch {
+    .text__glitch {
         position: relative;
         color: $dark;
         font-size: 65px;

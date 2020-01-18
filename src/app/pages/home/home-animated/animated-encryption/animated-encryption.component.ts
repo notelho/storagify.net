@@ -8,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 export class AnimatedEncryptionComponent implements OnInit {
 
   availableTexts: string[] = ['storagify', 'c3RvcmFnaWZ5']
-
   glitchText: string = 'storagify'
   dataText: string = 'storagify'
 

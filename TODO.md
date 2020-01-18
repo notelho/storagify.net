@@ -7,8 +7,6 @@ botão back to top com a #
 
 adicionar CDN /npm ao menu
 
-repensar download
 
 repensar ordem
 
-criar aba de texto apresentativo

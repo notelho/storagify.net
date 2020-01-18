@@ -14,8 +14,8 @@ import { HomeParallaxComponent } from './pages/home/home-parallax/home-parallax.
 import { HomeToolsComponent } from './pages/home/home-tools/home-tools.component';
 import { HomeAnimatedComponent } from './pages/home/home-animated/home-animated.component';
 import { HomeFooterComponent } from './pages/home/home-footer/home-footer.component';
-import { AnimatedDownloadComponent } from './pages/home/home-animated/animated-download/animated-download.component';
 import { AnimatedEncryptionComponent } from './pages/home/home-animated/animated-encryption/animated-encryption.component';
+import { AnimatedIntroductionComponent } from './pages/home/home-animated/animated-introduction/animated-introduction.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +31,8 @@ import { AnimatedEncryptionComponent } from './pages/home/home-animated/animated
     HomeToolsComponent,
     HomeAnimatedComponent,
     HomeFooterComponent,
-    AnimatedDownloadComponent,
     AnimatedEncryptionComponent,
+    AnimatedIntroductionComponent,
   ],
   imports: [
     BrowserModule,
