@@ -12,6 +12,10 @@ import { HomeHeaderComponent } from './pages/home/home-header/home-header.compon
 import { HomeQualityComponent } from './pages/home/home-quality/home-quality.component';
 import { HomeParallaxComponent } from './pages/home/home-parallax/home-parallax.component';
 import { HomeToolsComponent } from './pages/home/home-tools/home-tools.component';
+import { HomeAnimatedComponent } from './pages/home/home-animated/home-animated.component';
+import { HomeFooterComponent } from './pages/home/home-footer/home-footer.component';
+import { AnimatedDownloadComponent } from './pages/home/home-animated/animated-download/animated-download.component';
+import { AnimatedEncryptionComponent } from './pages/home/home-animated/animated-encryption/animated-encryption.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,11 @@ import { HomeToolsComponent } from './pages/home/home-tools/home-tools.component
     HomeHeaderComponent,
     HomeQualityComponent,
     HomeParallaxComponent,
-    HomeToolsComponent
+    HomeToolsComponent,
+    HomeAnimatedComponent,
+    HomeFooterComponent,
+    AnimatedDownloadComponent,
+    AnimatedEncryptionComponent,
   ],
   imports: [
     BrowserModule,

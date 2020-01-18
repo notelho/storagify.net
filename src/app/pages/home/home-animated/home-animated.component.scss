@@ -1,0 +1,21 @@
+@import 'src/assets/styles/variables.scss';
+
+.animated{
+    height: calc(14vh + 400px);
+    display: grid;
+    grid-template-columns: 1fr 500px;
+    grid-gap: 10px;
+    box-sizing: border-box;
+    padding: 7vh 10px;
+
+    .download{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .animation, .download{
+        height: 400px;
+        box-sizing: border-box;
+    }
+}

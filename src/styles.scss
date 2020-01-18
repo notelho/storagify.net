@@ -1,5 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=Nunito:300,400,600,700&display=swap';
 @import 'https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap';
+@import 'https://fonts.googleapis.com/css?family=Roboto:400,400i,700';
 @import './assets/styles/variables.scss';
 
 html {
@@ -37,4 +38,9 @@ html, body{
 
 *{
     font-family: 'Nunito', sans-serif;
+}
+
+@font-face {
+    font-family: "Amatica SC";
+    src: url("./assets/fonts/amatica-sc.ttf") format("truetype") 
 }
